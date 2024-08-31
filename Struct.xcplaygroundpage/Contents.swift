@@ -58,3 +58,19 @@ struct MarvelProduction{
 var series = MarvelProduction(series: "Hawkeye", aired: 2021, network: "Disney")
 
 print(series.aired)
+
+// Struct Vs Class
+// Structs Are Value Type
+
+
+struct Movie{
+    var name:String
+}
+
+var info = Movie(name: "IronMan")
+var info2 = info
+
+info2.name = "Avengers"
+print(info2.name)
+print(info.name)
+
